@@ -28,3 +28,46 @@ function submitForm() {
         }, 2000);
     }
 }
+
+
+
+
+
+
+
+
+
+
+const addBtn = document.querySelector(".nnn");
+const nameInput = document.getElementById("name");
+const phoneInput = document.getElementById("phone");
+
+let currentUserIndex = null;
+let users = JSON.parse(localStorage.getItem("users")) || [];
+
+
+function createUser() {
+  const name = nameInput.value.trim();
+  const email = phoneInput.value.trim();
+  let validUser = true;
+  let id = 5;
+  if (validUser) {
+    const newUser = {
+      name,
+      email,
+      id,
+    };
+    users.push(newUser);
+    saveData();
+  }
+}
+
+  
+  function saveData() {
+    localStorage.setItem("users", JSON.stringify(users));
+  }
+
+  addBtn.addEventListener("click",function(){
+    createUser();
+    console.log(users);
+  });
