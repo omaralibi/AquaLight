@@ -40,7 +40,12 @@ function submitForm() {
 
 const addBtn = document.querySelector(".nnn");
 const nameInput = document.getElementById("name");
+const numberInput = document.getElementById("np");
 const phoneInput = document.getElementById("phone");
+const dateInput = document.getElementById("date");
+
+
+
 
 let currentUserIndex = null;
 let users = JSON.parse(localStorage.getItem("users")) || [];
@@ -48,19 +53,19 @@ let users = JSON.parse(localStorage.getItem("users")) || [];
 
 function createUser() {
   const name = nameInput.value.trim();
-  const email = phoneInput.value.trim();
-  let validUser = true;
-  let id = 5;
-  if (validUser) {
+  const phone = phoneInput.value.trim();
+  const number = numberInput.value.trim();
+  const date = dateInput.value.trim();
+
     const newUser = {
       name,
-      email,
-      id,
+      phone,
+      number,
+      date,
     };
     users.push(newUser);
     saveData();
   }
-}
 
   
   function saveData() {
