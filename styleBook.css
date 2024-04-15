@@ -69,6 +69,17 @@ background-position: center center;}
     margin-bottom: 1vh;
 
 }
+.side a{
+    color: rgba(0, 0, 0, 0.429);
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: 1vh;
+    border:1px white;
+    background-color: rgba(255, 255, 255, 0.241);
+    border-radius: 3px;
+    padding: 3px 5px;
+
+}
 .bar{
     display: inline-block;
     width:5vh ;
