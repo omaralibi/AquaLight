@@ -223,7 +223,6 @@ scale: 1.01;}
     flex-direction: column;
     align-items: center;
     gap: 10vh;
-    padding-top: 100px;
     z-index: -1;
     font-size: 25px;
 }
@@ -347,6 +346,7 @@ scale: 1.01;}
     justify-content: center;
     align-items: center;
     z-index: -1;
+    overflow-x: hidden;
 }
 
 
@@ -465,8 +465,7 @@ scale: 1.01;}
 footer{
     background: linear-gradient(135deg, #0a6aa6, #A7CBD9);
 	box-shadow: 0 0 5px 5px rgba(11, 158, 188, 0.142);
-	width: 100%;
-	text-align: left;
+	text-align: center;
 padding-top: 30px;
     display: flex;
     flex-direction: column;
@@ -486,8 +485,7 @@ width: 20vh;}
 .map iframe{
     border-radius: 10px;
     border: none;
-    width: 70vh;
-    height: 30vh;
+
 }
 
 .footer-links{
@@ -495,11 +493,10 @@ width: 20vh;}
 	padding: 0;
 }
 .footer{
-    display: flex;
-    width: 100%;
     justify-content: space-around;
+    display: flex;
     align-items: center;
-    gap: 30vh;
+    gap: 5vh;
 }
 
 
@@ -581,53 +578,46 @@ justify-content: center;
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
-
+@media (max-width: 600px){
+    footer{
+        width: 100%;
+    }
+}
     
- @media (max-width: 1010px) {
+@media (max-width: 1010px) {
 
-	footer{
+	footer,.footer{
         display: flex;
         flex-direction: column;
         height: fit-content;
-	}
-
-	.footer-left,
-	.footer-center,
-	.footer-right{
-		display: flex;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-center i{
-		margin-left: 0;
-	}
-    .footer{display: block;}
+        width: 100%;
+	}    
     .navbar ul{display: none;}
     .navbar .toggle_btn{display: block;}
     .dropdownMenu{display: flex;align-items: center;  flex-direction: column;}
 .links{display: none;}
-    section{flex-direction: column;
-   margin: 0 40px ;}
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .s0{flex-direction: column-reverse;justify-content: center;gap: 10vh;
             }
     #aboutUs{ 
-    height: fit-content; gap: 50px;}
+    height: fit-content; gap: 45px;}
     .valeurs ul{flex-direction: column;}
     .coach ul{flex-direction: column;}
  }
- @media (max-width: 600px){
-    .loc{
-        font-size: 3vw;
-    }
-    .s01 h1{
-        font-size: 9vw;
-    }
-    .s01 p{
-        font-size: 4vw;
-    }
-    .s02 img{
-        width: 250px;}
 
+ @media (max-width: 414px) {
+
+    section {
+
+        scale: 0.8; 
+    }
+    body{
+        
+        display: flex;
+        justify-content: center;
+    }
  }
