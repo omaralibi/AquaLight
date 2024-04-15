@@ -155,7 +155,7 @@ body{
 
     flex-direction: column;
     background-size: cover;
- background-attachment: scroll;
+ background-attachment: fixed;
 background-position: center center;
 }
 
@@ -195,14 +195,14 @@ align-items: center;
 }
 .loc{
     font-family: swisop;
-    font-size: 2vw;
+    font-size: 4vh;
 }
 .s01 h1{
-    font-size: 7vw;
+    font-size: 15vh;
 }
 .s01 p{
     font-family: swisop;
-    font-size: 3vw;
+    font-size: 6vh;
 }
 .s01 a:hover{
 scale: 1.01;}
