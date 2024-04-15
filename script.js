@@ -31,13 +31,6 @@ function submitForm() {
 
 
 
-
-
-
-
-
-
-
 const addBtn = document.querySelector(".nnn");
 const nameInput = document.getElementById("name");
 const numberInput = document.getElementById("np");
@@ -50,11 +43,11 @@ const dateInput = document.getElementById("date");
 let users = JSON.parse(localStorage.getItem("users")) || [];
 
 
-function createUser() {
-  const name = nameInput.value.trim();
-  const phone = phoneInput.value.trim();
-  const number = numberInput.value.trim();
-  const date = dateInput.value.trim();
+addBtn.addEventListener("click",function(){
+  const name = nameInput.value;
+  const phone = phoneInput.value;
+  const number = numberInput.value;
+  const date = dateInput.value;
 
 
   const newUser = {
@@ -64,21 +57,8 @@ function createUser() {
       date,
   };
   users.push(newUser);
-  saveData();
-  clearInputs(); // Clear input fields after creating user
-}
-
-function clearInputs() {
-  nameInput.value = "";
-  phoneInput.value = "";
-  numberInput.value = "";
-  dateInput.value = "";
-}
-  
-  function saveData() {
-    localStorage.setItem("users", JSON.stringify(users));
-  }
-
-  addBtn.addEventListener("click",function(){
-    createUser();
+  localStorage.setItem("users", JSON.stringify(users));
   });
+
+
+

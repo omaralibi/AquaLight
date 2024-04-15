@@ -35,7 +35,7 @@ function getUsers() {
       const phoneTd = document.createElement("td");
       const numberTd = document.createElement("td");
       const dateTd = document.createElement("td");
-      const actionTd = document.createElement("td"); // Create actionTd for action buttons
+      const actionTd = document.createElement("td"); 
 
       const deleteBtn = document.createElement("button");
       deleteBtn.className = "delete-btn";
@@ -45,16 +45,15 @@ function getUsers() {
       dateTd.innerText = user.date;
       nameTd.innerText = user.name;
       phoneTd.innerText = user.phone;
-      numberTd.innerText = user.number; // Added to display the number
-
+      numberTd.innerText = user.number;
       actionTd.appendChild(editBtn);
       actionTd.appendChild(deleteBtn);
 
       tr.appendChild(phoneTd);
       tr.appendChild(nameTd);
-      tr.appendChild(numberTd); // Append numberTd
+      tr.appendChild(numberTd); 
       tr.appendChild(dateTd);
-      tr.appendChild(actionTd); // Append actionTd
+      tr.appendChild(actionTd);
       
       tableBody.appendChild(tr);
   });
