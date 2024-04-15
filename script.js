@@ -47,7 +47,6 @@ const dateInput = document.getElementById("date");
 
 
 
-let currentUserIndex = null;
 let users = JSON.parse(localStorage.getItem("users")) || [];
 
 
@@ -57,10 +56,6 @@ function createUser() {
   const number = numberInput.value.trim();
   const date = dateInput.value.trim();
 
-  if (!name || !phone || !number || !date) {
-      alert("All fields are required");
-      return;
-  }
 
   const newUser = {
       name,
@@ -86,5 +81,4 @@ function clearInputs() {
 
   addBtn.addEventListener("click",function(){
     createUser();
-    console.log(users);
   });
