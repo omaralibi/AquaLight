@@ -133,7 +133,7 @@ opacity: 1;}
 
 @media (max-width: 600px) {
     body{
-        padding: 50px;
+        padding-bottom: 200px;
     }
     .glass{
         margin-top: 200px;
