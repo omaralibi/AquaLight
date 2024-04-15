@@ -20,6 +20,9 @@ body{
  background-attachment: fixed;
 background-position: center center;}
 
+::-webkit-scrollbar {
+    display: none;
+}
 .nav{
     display: flex;
     padding: 2px;
@@ -39,7 +42,7 @@ background-position: center center;}
 
 }
 .glass{
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    background: linear-gradient(135deg, rgba(153, 153, 153, 0.488), rgba(0, 0, 0, 0.384));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 5vh;
@@ -60,7 +63,7 @@ background-position: center center;}
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.8);
 }
 .side h1{
 
@@ -70,12 +73,11 @@ background-position: center center;}
 
 }
 .side a{
-    color: rgba(0, 0, 0, 0.429);
+    color: rgba(255, 255, 255, 0.429);
     text-decoration: none;
     letter-spacing: 5px;
     font-size: 1vh;
     border:1px white;
-    background-color: rgba(255, 255, 255, 0.241);
     border-radius: 3px;
     padding: 3px 5px;
 
@@ -84,7 +86,7 @@ background-position: center center;}
     display: inline-block;
     width:5vh ;
     height: 1vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 .side .info{
     font-family: swisop;
@@ -101,16 +103,16 @@ background-position: center center;}
 }
 .register label{
     font-family: tangosans;
-    color:  rgba(0, 0, 0, 0.5)}
+    color:  rgba(255, 255, 255, 0.8)}
 
 .register input{
  width: 100%;
- color:  rgba(0, 0, 0, 0.5);
+ color:  rgba(255, 255, 255, 0.8);
   font-family: swisop;
   font-size: 2.5vh;
   background: none;
   border: none;
-  border-bottom: 0.2vh solid rgba(0, 0, 0, 0.5);
+  border-bottom: 0.2vh solid rgba(255, 255, 255, 0.8);
   outline: none;
   margin-bottom: 20px;
 }
@@ -118,7 +120,7 @@ background-position: center center;}
     padding: 10px 20px;
 background: none;
 border: none;
-color: rgba(0, 0, 0, 0.5);
+color: rgba(255, 255, 255, 0.8);
 }
 .check button:hover{
 background-color: rgba(58, 58, 58, 0.195);

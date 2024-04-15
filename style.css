@@ -15,7 +15,9 @@
    font-family:tangosans ;
 
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 .book button{
     padding: 10px 20px;
     cursor: pointer;
@@ -443,7 +445,7 @@ footer{
 padding-top: 30px;
     display: flex;
     justify-content: space-around;
-    height: 30vh;
+    height: 35vh;
 }
 
 .footer-left{

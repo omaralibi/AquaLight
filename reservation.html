@@ -30,13 +30,13 @@
             <input type="text" id="name" name="name" required>
 
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="tel" id="phone" name="phone" maxlength="8" required>
 
             <label for="number">Number of persons:</label>
-            <input type="number" id="np" name="np" >
+            <input type="number" id="np" name="np"min="1" max="15" pattern="\d+" required>
 
             <label for="date">Date:</label>
-            <input type="date" id="date" name="date" >
+            <input type="date" id="date" name="date" required>
 
             <div class="check">
                 <button type="reset" id="cancel-btn">RESET</button>
