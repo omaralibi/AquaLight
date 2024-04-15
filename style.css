@@ -155,7 +155,7 @@ body{
 
     flex-direction: column;
     background-size: cover;
- background-attachment: fixed;
+ background-attachment: scroll;
 background-position: center center;
 }
 
@@ -596,11 +596,7 @@ justify-content: center;
     .navbar .toggle_btn{display: block;}
     .dropdownMenu{display: flex;align-items: center;  flex-direction: column;}
 .links{display: none;}
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
     .s0{flex-direction: column-reverse;justify-content: center;gap: 10vh;
             }
     #aboutUs{ 
@@ -614,10 +610,5 @@ justify-content: center;
     section {
 
         scale: 0.8; 
-    }
-    body{
-        
-        display: flex;
-        justify-content: center;
     }
  }
