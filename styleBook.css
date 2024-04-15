@@ -147,6 +147,6 @@ align-items: center;
 flex-direction: column;
     }
     .side{
-        height: 50vh;
+        height: fit-content;
     }
 }
