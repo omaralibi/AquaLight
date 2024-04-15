@@ -152,9 +152,7 @@ top: 10vh;
 body{
     background-image: url(image/wallpaper.jpg);
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     flex-direction: column;
     background-size: cover;
  background-attachment: fixed;
@@ -163,7 +161,7 @@ background-position: center center;
 
 
 section{
-    width: 90%;
+    width: 100%;
 
     min-height: 100vh;
     display: flex;
@@ -385,11 +383,11 @@ scale: 1.01;}
 }
 
 .previous:hover span {
-    transform: translateX(-10px) scale(1.2);
+    transform: scale(1.2);
 }
 
 .next:hover span {
-    transform: translateX(10px) scale(1.2);
+    transform:scale(1.2);
 }
 
 .slider-nav ul {
