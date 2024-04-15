@@ -57,16 +57,28 @@ function createUser() {
   const number = numberInput.value.trim();
   const date = dateInput.value.trim();
 
-    const newUser = {
+  if (!name || !phone || !number || !date) {
+      alert("All fields are required");
+      return;
+  }
+
+  const newUser = {
       name,
       phone,
       number,
       date,
-    };
-    users.push(newUser);
-    saveData();
-  }
+  };
+  users.push(newUser);
+  saveData();
+  clearInputs(); // Clear input fields after creating user
+}
 
+function clearInputs() {
+  nameInput.value = "";
+  phoneInput.value = "";
+  numberInput.value = "";
+  dateInput.value = "";
+}
   
   function saveData() {
     localStorage.setItem("users", JSON.stringify(users));
