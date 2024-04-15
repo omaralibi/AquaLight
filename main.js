@@ -10,29 +10,39 @@ const toggleBtnIcon = document.querySelector('.toggle_btn i')
         : 'fa-solid fa-bars'
     };
 
-    let sections = document.querySelectorAll('section');
-    let navlinks = document.querySelectorAll('header .navbar ul li a');
-    let navlinksD = document.querySelectorAll('header .dropdownMenu a');
-    
-    window.onscroll = () => {
-        sections.forEach(sec => {
-            let top = window.scrollY;
-            let offset = sec.offsetTop;
-            let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
-    
-            if ((top >= offset) && (top < offset + height)) {
-                navlinks.forEach(links => {
-                    links.classList.remove('active');
-                });
-                navlinksD.forEach(links => {
-                    links.classList.remove('active');
-                });
-                document.querySelector('header .navbar ul li a[href*="' + id + '"]').classList.add('active');
-                document.querySelector('header .dropdownMenu a[href*="' + id + '"]').classList.add('active');
-            }
-        });
-    };
+// Selecting all sections, navbar links, and dropdown links
+let sections = document.querySelectorAll('section');
+let navlinks = document.querySelectorAll('header .navbar ul li a');
+let navlinksD = document.querySelectorAll('header .dropdownMenu a');
+
+// Function to set active link based on scroll position
+function setActiveLink() {
+    let top = window.scrollY;
+
+    sections.forEach(sec => {
+        let offset = sec.offsetTop;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            navlinks.forEach(links => {
+                links.classList.remove('active');
+            });
+            navlinksD.forEach(links => {
+                links.classList.remove('active');
+            });
+
+            let navbarLink = document.querySelector(`header .navbar ul li a[href="#${id}"]`);
+            let dropdownLink = document.querySelector(`header .dropdownMenu a[href="#${id}"]`);
+
+            if (navbarLink) navbarLink.classList.add('active');
+            if (dropdownLink) dropdownLink.classList.add('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', setActiveLink);
+
     
 
 
@@ -45,6 +55,10 @@ const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const showSlide = (index) => {
             slides.forEach((slide) => slide.classList.remove('active'));
             slides[index].classList.add('active');
+            slides.forEach((slide) => slide.classList.remove('nxt'));
+            slides[(index + 1) % slides.length].classList.add('nxt');
+            slides.forEach((slide) => slide.classList.remove('prev'));
+            slides[(index - 1 + slides.length) % slides.length].classList.add('prev');
         };
     
         prevBtn.addEventListener('click', () => {
