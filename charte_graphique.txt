@@ -1,0 +1,9 @@
+colors:
+
+yellow:  #f9e87a
+blue:   #4de2ff
+
+fonts:
+
+tango sans
+swino1

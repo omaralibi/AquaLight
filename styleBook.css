@@ -1,0 +1,149 @@
+@font-face {
+    font-family: tangosans;
+    src: url(TangoSans.ttf);
+    font-family:swisop;
+    src: url(swisop1.ttf);
+
+}
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;}
+body{
+    background-image: url(image/wallpaper.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+ background-attachment: fixed;
+background-position: center center;}
+
+.nav{
+    display: flex;
+    padding: 2px;
+    background-color: #57575767;
+    align-items: center;
+    padding-right: 5%;
+    justify-content: end;
+    width: 100%;
+    height: 5vh;   
+    border-radius:  5vh 5vh 0 0;
+    position: relative;
+}
+.insider{
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 10% 5%;
+
+}
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5vh;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width:50%;
+
+}
+
+.nav a { 
+
+    font-size: 20px;
+    color: #0000009c;
+    
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgba(0, 0, 0, 0.5);
+}
+.side h1{
+
+    font-family: tangosans ;
+    font-size:5vh;
+    margin-bottom: 1vh;
+
+}
+.bar{
+    display: inline-block;
+    width:5vh ;
+    height: 1vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.side .info{
+    font-family: swisop;
+    font-weight: bold;
+    font-size: 2vh;
+
+}
+.register form{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: start;
+    margin: 10px;
+}
+.register label{
+    font-family: tangosans;
+    color:  rgba(0, 0, 0, 0.5)}
+
+.register input{
+ width: 100%;
+ color:  rgba(0, 0, 0, 0.5);
+  font-family: swisop;
+  font-size: 2.5vh;
+  background: none;
+  border: none;
+  border-bottom: 0.2vh solid rgba(0, 0, 0, 0.5);
+  outline: none;
+  margin-bottom: 20px;
+}
+.check button{
+    padding: 10px 20px;
+background: none;
+border: none;
+color: rgba(0, 0, 0, 0.5);
+}
+.check button:hover{
+background-color: rgba(58, 58, 58, 0.195);
+border: 1px solid rgba(18, 18, 18, 0.675);
+border-radius: 5vh;
+color: rgba(240, 248, 255, 0.684);
+cursor: pointer;
+}
+#message{
+opacity: 0;
+    top: 11%;
+    background-color: rgba(255, 255, 255, 0.666);
+    border-radius: 25px;
+    color: black;
+    width: fit-content;
+    padding: 10px;
+    font-family: swisop;
+    transition: opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+}
+    
+#message.active{
+opacity: 1;}
+
+@media (max-width: 600px) {
+    .glass{
+        margin-top: 200px;
+        height: fit-content;
+    }
+    .nav{
+        padding-right:8% ;
+    }
+    .insider{
+align-items: center;
+flex-direction: column;
+    }
+    .side{
+        height: 50vh;
+    }
+}
