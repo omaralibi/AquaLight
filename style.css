@@ -57,7 +57,7 @@ a:hover,a.active{
     width: 11rem;
 }
 .logo:hover{
-    scale: 1.01;
+    scale: 1.1;
 }
 
 .links{
@@ -314,7 +314,8 @@ scale: 1.01;}
     border-radius: 25px;
     border: none;
     max-width: fit-content;
-    background: linear-gradient(135deg, #0a6aa6, #A7CBD9);
+    background: linear-gradient(0deg, #0a6aa6, #A7CBD9);
+    box-shadow: 0 0 50px 2px #00000067;
     color: rgb(255, 255, 255);
     font-size: 50px;
     letter-spacing: 2px;
