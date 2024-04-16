@@ -125,7 +125,6 @@ header{
     z-index: 1;
 position: absolute;
 top: 10vh;
-padding-top: 2vh;
     width:80%;
     gap: 20px;
     margin:0;
@@ -140,6 +139,7 @@ padding-top: 2vh;
     height: fit-content;
 }
 .dropdownMenu a{
+    padding: 2px;
     margin: 5px;
     width: 100%;
     height: fit-content;
@@ -524,13 +524,18 @@ footer p{
     width: 80%;
     display: flex;
     justify-content: space-evenly ;
+
 }
 .contact a{
     scale: 1.5;
     font-size: 2vh;
+    color: #024059;
+    font-family: swisop;
+    font-weight: 600;
+
 }
 .contact a:hover{
-    color: #024059;
+    color: #5db4d6;
 }
 .footer-center p a{
 	color: #ffffff;
@@ -587,10 +592,31 @@ justify-content: center;
     footer{
         width: 100%;
     }
+
 }
     
 @media (max-width: 1010px) {
+    .s02 img{
+        scale: 0.9;
+    }
+    .s01 h1{
+        font-size: 7vh;
+    }
+    .loc{
+        font-family: swisop;
+        font-size: 3vh;
+    }
 
+    .s01 p{
+        font-family: swisop;
+        font-size: 3vh;
+    }
+
+    .contact{
+        flex-direction: column;
+        gap: 3vh;
+        align-items: center;
+    }
 	footer,.footer{
         display: flex;
         flex-direction: column;
@@ -606,7 +632,7 @@ justify-content: center;
             }
     #aboutUs{ 
     height: fit-content; gap: 45px;}
-    .valeurs ul{flex-direction: column;}
+    .valeurs ul{flex-direction: column;align-items: center;}
     .coach ul{flex-direction: column;}
  }
 
@@ -622,7 +648,7 @@ justify-content: center;
         scale: 0.9;
     }
     .s01 h1{
-        font-size: 10vh;
+        font-size: 7vh;
     }
     .loc{
         font-family: swisop;
@@ -631,10 +657,13 @@ justify-content: center;
 
     .s01 p{
         font-family: swisop;
-        font-size: 4vh;
+        font-size: 3vh;
     }
     section {
 
         scale: 0.8; 
+    }
+    .s0{
+        width: fit-content;
     }
  }
