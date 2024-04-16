@@ -10,12 +10,10 @@ const toggleBtnIcon = document.querySelector('.toggle_btn i')
         : 'fa-solid fa-bars'
     };
 
-// Selecting all sections, navbar links, and dropdown links
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header .navbar ul li a');
 let navlinksD = document.querySelectorAll('header .dropdownMenu a');
 
-// Function to set active link based on scroll position
 function setActiveLink() {
     let top = window.scrollY;
 
@@ -24,7 +22,7 @@ function setActiveLink() {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if (top >= offset && top < offset + height) {
+        if ((top >= offset) && (top < (offset + (height*0.8)))) {
             navlinks.forEach(links => {
                 links.classList.remove('active');
             });
