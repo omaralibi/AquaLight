@@ -223,7 +223,7 @@ scale: 1.01;}
     font-size: 25px;
 }
 #aboutUs p{
-    padding: 7vh 5vh;
+    padding: 5vh 5vw;
 
     font-family: Arial;
     font-size: 1em;
@@ -591,6 +591,9 @@ justify-content: center;
     }
     section{
         padding: 0 5vw;
+    }
+    .container {
+        scale: 0.8;
     }
 
 }
