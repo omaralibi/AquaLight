@@ -213,7 +213,17 @@ scale: 1.01;}
     font-size: medium;
 }
 
-
+@media (max-width: 1400px){
+    .loc{
+        font-size: 3vw;
+    }
+    .s01 h1{
+        font-size: 10vw;
+    }
+    .s01 p{
+        font-size: 4vw;
+    }
+}
 #aboutUs{
     display: flex;
     flex-direction: column;
