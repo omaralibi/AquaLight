@@ -606,8 +606,18 @@ justify-content: center;
  }
 
  @media (max-width: 414px) {
+    .s02 img{}
     .s01 h1{
         font-size: 10vh;
+    }
+    .loc{
+        font-family: swisop;
+        font-size: 3vh;
+    }
+
+    .s01 p{
+        font-family: swisop;
+        font-size: 4vh;
     }
     section {
 
