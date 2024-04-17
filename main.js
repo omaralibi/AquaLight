@@ -46,8 +46,6 @@ window.addEventListener('scroll', setActiveLink);
 
     document.addEventListener('DOMContentLoaded', function () {
         const slides = document.querySelectorAll('.slider img');
-        const prevBtn = document.querySelector('.previous');
-        const nextBtn = document.querySelector('.next');
         let currentIndex = 0;
     
         const showSlide = (index) => {
@@ -55,19 +53,14 @@ window.addEventListener('scroll', setActiveLink);
             slides[index].classList.add('active');
             slides.forEach((slide) => slide.classList.remove('nxt'));
             slides[(index + 1) % slides.length].classList.add('nxt');
-            slides.forEach((slide) => slide.classList.remove('prev'));
-            slides[(index - 1 + slides.length) % slides.length].classList.add('prev');
+
         };
     
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-            showSlide(currentIndex);
-        });
 
-        nextBtn.addEventListener('click', () => {
+        setInterval(function(){
             currentIndex = (currentIndex + 1) % slides.length;
             showSlide(currentIndex);
-        });
+        },2000)
     });
     
 
