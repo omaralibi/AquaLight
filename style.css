@@ -357,6 +357,8 @@ scale: 1.01;}
     align-items: center;
     z-index: -1;
     overflow-x: hidden;
+    margin-bottom: 15vh;
+    padding-top:20vh ;
 }
 
 
@@ -396,7 +398,14 @@ scale: 1.01;}
     box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
     border-radius: 20px;
 }
-
+.slider img.prev{
+    display: inline;
+    filter: blur(5px);
+    box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+    max-width: 30vh;
+    max-height: 50vh;
+    order: -1; 
+}
 .slider img.nxt{
         display: inline;
         filter: blur(5px);
