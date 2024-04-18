@@ -156,6 +156,7 @@ top: 10vh;
 body{
     background-image: url(image/wallpaper.jpg);
     height: 100vh;
+    overflow: scroll;
     background-size: cover;
  background-attachment: fixed;
 background-position: center center;
