@@ -18,6 +18,9 @@
 ::-webkit-scrollbar {
     display: none;
 }
+_::-webkit-full-page-media, _:future, :root .panel {
+    background-image: url(image/wallpaper.jpg);
+ }
 .book button{
     padding: 10px 20px;
     cursor: pointer;
